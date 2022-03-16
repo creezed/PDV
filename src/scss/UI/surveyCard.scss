@@ -1,0 +1,42 @@
+.survey {
+    &-card {
+        position: relative;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding-left: rem(40);
+        padding-right: rem(30);
+        border: 1px solid transparent;
+        background-color: $color-white;
+        box-shadow: $box-shadow;
+        border-radius: 10px;
+        transition: $transition;
+        min-height: 176px;
+        -webkit-tap-highlight-color: transparent;
+        cursor: pointer;
+        & > {
+            input[type='radio'] {
+                display: none;
+            }
+        }
+        &__text {
+            max-width: 63%;
+            @include mobile {
+                max-width: 100%;
+            }
+        }
+        &__body {
+            display: flex;
+            align-items: flex-start;
+            gap: rem(22);
+        }
+        &__rectangle {
+            position: absolute;
+            bottom: -1px;
+            right: -1px;
+            @include mobile {
+                display: none;
+            }
+        }
+    }
+}

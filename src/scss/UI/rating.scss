@@ -1,0 +1,10 @@
+.rating {
+    display: flex;
+    gap: 4px;
+    align-items: center;
+    color: #ffce50;
+    &__item {
+        font-size: 18px;
+        cursor: default;
+    }
+}

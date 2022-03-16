@@ -1,0 +1,42 @@
+// Zero_style
+@import '../scss/scss/_zeroStyle';
+
+// SCSS
+@import '../scss/scss/_fonts';
+@import '../scss/scss/_var';
+@import '../scss/scss/_function';
+@import '../scss/scss/_mixin';
+
+// Libs
+@import '../scss/libs/swiper.min';
+@import '../scss/libs/swiper.scss';
+
+// Common
+@import '../scss/common/common.scss';
+@import '../scss/common/typography.scss';
+
+// Ui
+@import '../scss/UI/surveyCard.scss';
+@import '../scss/UI/radio.scss';
+@import '../scss/UI/finishedCard.scss';
+@import '../scss/UI/stagesCard.scss';
+@import '../scss/UI/staffCard.scss';
+@import '../scss/UI/rating.scss';
+@import '../scss/UI/btn.scss';
+@import '../scss/UI/addFile.scss';
+
+
+// component
+@import '../scss/components/hero.scss';
+@import '../scss/components/services.scss';
+@import '../scss/components/survey.scss';
+@import '../scss/components/profit.scss';
+@import '../scss/components/finished.scss';
+@import '../scss/components/stages.scss';
+@import '../scss/components/partners.scss';
+@import '../scss/components/staff.scss';
+@import '../scss/components/contacts.scss';
+@import '../scss/components/video-section.scss';
+@import '../scss/components/customers.scss';
+@import '../scss/components/data.scss';
+@import '../scss/components/communicate.scss';
