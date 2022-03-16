@@ -1,0 +1,58 @@
+.survey {
+    padding-top: 100px;
+    padding-bottom: 100px;
+    &__descr {
+        max-width: 667px;
+        @include mobile {
+            display: none;
+        }
+    }
+    &-body {
+        display: flex;
+        gap: rem(140);
+    }
+    &__list {
+        padding: 0;
+        flex-basis: 70%;
+        @include tablet {
+            flex-basis: 100%;
+        }
+    }
+    &-voted {
+        padding-right: rem(140);
+        flex-basis: 30%;
+        @include tablet {
+            display: none;
+        }
+        &__body {
+            display: flex;
+            align-items: flex-end;
+            gap: 5px;
+        }
+        &__count {
+            line-height: 1.02;
+        }
+        &__user {
+            color: $text-color-second;
+        }
+    }
+    &__card-item {
+        &:not(:last-child) {
+            margin-bottom: rem(16);
+        }
+    }
+}
+
+// radio checked
+.survey__radio:checked {
+    & + .survey-card__body{
+        & > .radio {
+            &::before {
+                opacity: 1;
+            }
+        }
+    }
+    & + .survey-card {
+        border: 1px solid $main-color;
+    }
+}

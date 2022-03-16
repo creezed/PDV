@@ -1,0 +1,30 @@
+.data {
+    margin-bottom: $offset-section-m;
+    &-body {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 40px;
+        background-color: $gray-color-table;
+        padding: 48px 56px;
+    }
+
+    &__descr-task {
+
+    }
+    &__technical-specificationt {
+
+    }
+    &__picture {
+
+    }
+    &__hidden-picture {
+        height: 0px;
+        background-size: cover;
+        background-position: center;
+        transition: $transition;
+        &--open {
+            height: 120px;
+        }
+    }
+}

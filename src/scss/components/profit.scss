@@ -1,0 +1,96 @@
+.profit {
+    margin-bottom: rem(120);
+}
+
+.profit-banner {
+    height: 40vh;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: start;
+    color: $color-white;
+    background-color: $main-color;
+    @include mobile {
+        display: none;
+    }
+
+    &--wrapper {
+        background: linear-gradient(to right, $main-color 45%, $color-white 55%);
+    }
+
+    &__text {
+        z-index: 13;
+        max-width: 362px;
+    }
+
+    &__rectangle {
+        z-index: 12;
+        position: absolute;
+        top: 0;
+        left: 0px;
+        bottom: 0;
+        width: 50%;
+        height: 100%;
+        background-color: $main-color;
+        clip-path: polygon(0 0, 70% 0, 100% 100%, 0% 100%);
+        box-shadow: 764px 0px 0px 0px rgba(11, 117, 114, 0.26);
+        -webkit-clip-path: polygon(0 0, 70% 0, 100% 100%, 0% 100%);
+    }
+
+    &--opacity {
+        z-index: 11;
+        position: absolute;
+        top: 0;
+        left: 0;
+        bottom: 0;
+        width: 60%;
+        height: 100%;
+        background-color: $main-color;
+        clip-path: polygon(0 0, 73% 0, 100% 100%, 0% 100%);
+        -webkit-clip-path: polygon(0 0, 73% 0, 100% 100%, 0% 100%);
+        opacity: .3;
+    }
+
+    &__img {
+        position: absolute;
+        min-height: 100%;
+        max-height: 100%;
+        min-width: 90%;
+        max-width: 90%;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        img {
+            min-width: 100%;
+            max-width: 100%;
+            min-height: 100%;
+            max-height: 100%;
+            object-fit: cover;
+            object-position: center;
+        }
+    }
+}
+
+.profit-category {
+    &__list {
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
+        row-gap: rem(65);
+        column-gap: rem(150);
+        padding: 0 64px;
+        padding-top: rem(72);
+        @include tablet {
+            grid-template-columns: 1fr;
+            padding: 0;
+            padding-top: rem(72);
+        }
+    }
+    &__item {
+        display: flex;
+        align-items: center;
+        gap: rem(40);
+    }
+    &__text {
+        max-width: 400px;
+    }
+}
